@@ -1,0 +1,37 @@
+:root {
+    --color-primary: #214b6d;
+    --color-shadow: #22222288;
+}
+  
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    font-family: var(--font-content);
+    max-width: 100vw;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-primary);
+    font-family: var(--font-title);
+    margin: 0.5rem 0;
+  }

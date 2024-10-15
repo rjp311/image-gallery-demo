@@ -1,0 +1,36 @@
+.board {
+    columns: 4;
+    column-gap: 1rem;
+    margin: 1rem 0;
+ }
+ 
+ .image {
+     cursor: pointer;
+     position: relative;
+     display: flex;
+     margin-bottom: 1rem;
+     border-radius: 4px;
+     box-shadow: 0 2px 8px var(--color-shadow);
+     overflow: hidden;
+     transition: transform 0.1s ease-in-out;
+     img {
+         width: 100%;
+         height: auto;
+     }
+     &:hover {
+         z-index: 5;
+         transform: scale(1.05);
+     }
+ }
+
+ @media screen and (max-width: 1200px) {
+    .board {
+        columns: 3;
+    }
+ }
+
+ @media screen and (max-width: 600px) {
+    .board {
+        columns: 2;
+    }
+ }
